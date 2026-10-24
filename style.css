@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Verdana, Arial, sans-serif;
+}
+
+body{
+    background:#393C3E;
+}
+
+.container{
+    width:80%;
+    max-width:1000px;
+    margin:20px auto;
+    background:#fff;
+}
+
+/* Banner */
+
+header img{
+    width:100%;
+    display:block;
+}
+
+/* Main */
+
+.main-content{
+    display:flex;
+}
+
+.content{
+    width:76%;
+    background:#D5E6F5;
+    padding:40px;
+}
+
+.content h2{
+    margin-bottom:25px;
+    font-size:28px;
+}
+
+.content p{
+    margin-bottom:15px;
+    text-align:justify;
+    line-height:1.8;
+}
+
+/* "Sidebar" */
+
+.sidebar{
+    width:24%;
+    background:#1C6087;
+    padding-top:60px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin:20px;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+}
+
+.sidebar a:hover{
+    text-decoration:underline;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#fff;
+    font-size:14px;
+}
+
+footer span{
+    color:blue;
+    text-decoration:underline;
+}
+
+/* Formulario de registro */
+
+fieldset{
+    border:1px solid #8c96a5;
+    padding:20px;
+    max-width:500px;
+}
+
+legend{
+    font-weight:bold;
+    padding:0 5px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:5px;
+}
+
+.form-group input{
+    width:180px;
+    height:28px;
+    padding:5px;
+}
+
+.buttons{
+    margin-top:15px;
+}
+
+.buttons button{
+    padding:6px 15px;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+#messages{
+    margin-top:15px;
+    font-weight:bold;
+    color: red
+}
+
+.success{
+    color:green !important;
+}
+
+
+@media(max-width:768px){
+
+    .main-content{
+        flex-direction:column;
+    }
+
+    .content,
+    .sidebar{
+        width:100%;
+    }
+
+    .sidebar{
+        padding:20px;
+    }
+
+    .container{
+        width:95%;
+    }
+
+    .form-group input{
+        width:100%;
+    }
+}
